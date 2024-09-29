@@ -1,0 +1,128 @@
+/* General container for the content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Button container with vertical alignment and spacing */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Join and Create button layout */
+.join {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Full width for the Create button */
+.create-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Message box styling */
+.message-box {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: white;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 1200px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages container with scrolling capability */
+.messages {
+  overflow-y: auto;
+  flex: 1;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Input area for messages */
+.inputs {
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  border-top: 2px solid #007bff;
+  box-sizing: border-box;
+}
+
+/* Input field for typing messages */
+#message {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Text container with alignment and spacing */
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  margin-bottom: 10px;
+}
+
+/* Muted text for timestamps or secondary information */
+.muted {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Header styling */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Smooth scrolling */
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: #f0f2f5;
+}
